@@ -1,0 +1,71 @@
+/* Extra Small */
+
+@media(max-width:767px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: .8em;
+    letter-spacing: .5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  .carousel-inner img {
+    margin: auto;
+    height: 200px !important;
+  }
+  #navpoint{
+    font-size: .42em;
+    margin-bottom: -10px;
+  }
+}
+
+/* Small */
+
+@media(min-width:768px) and (max-width:991px) {
+  h1 {
+    font-size: 1.35em;
+  }
+  h2 {
+    font-size: 1.8em;
+    letter-spacing: .35em;
+  }
+  h3 {
+    font-size: .8em;
+  }
+  #navpoint{
+    font-size: 1.3em;
+    margin-bottom: -10px;
+  }
+}
+
+/* Medium */
+
+@media(min-width:992px) and (max-width:1199px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.25em;
+    letter-spacing: .35em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+}
+
+/* Large */
+
+@media(min-width:1200px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+    letter-spacing: .5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+}
