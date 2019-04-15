@@ -82,6 +82,10 @@ a:hover img {
   transition: all 0s ease;
 }
 
+a {
+  color: grey;
+}
+
 blockquote {
   margin-bottom: 40px;
   border-left: 6px solid #ccc;
@@ -90,11 +94,6 @@ blockquote {
 .carousel-inner img {
   margin: auto;
   height: 384px !important;
-}
-
-#title{
-  letter-spacing: 1em;
-  line-height: 1em;
 }
 
 h3 span {

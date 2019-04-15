@@ -36,43 +36,29 @@
 <body>
   <div class="container">
 
+
     <div class="row">
+      <div class="col-xs-8 col-md-10">
+        <h1 id="title">JOEY<br>MICHALINA<br>MARIANO</h1>
+        <div class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">M E N U &nbsp;
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">PORTFOLIO</li>
+            <li><a href="/code.html">Code</a></li>
+            <li><a href="/music.html">Music</a></li>
+            <li><a href="/art.html">Art</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">INFORMATION</li>
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="col-xs-4 col-md-2">
         <a href="/"><img class="img-responsive" alt="ms. joey michalina mariano" src="images/me.jpg" style="width: 28em; border-radius: 50%;margin-top: 20px;"></a>
       </div>
-
-      <div class="col-xs-6 col-md-8">
-        <h1 id="title">JOEY<br></br>MICHALINA<br></br>MARIANO</h1>
-      </div>
-
-    <div class="col-xs-2 col-md-2">
-      <div class="dropdown pull-right">
-        <br>
-        <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">M E N U &nbsp;
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li class="dropdown-header">PORTFOLIO</li>
-          <li><a href="/code.html">Code</a></li>
-          <li><a href="/music.html">Music</a></li>
-          <li><a href="/art.html">Art</a></li>
-          <li class="divider"></li>
-          <li class="dropdown-header">INFORMATION</li>
-          <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-      <!-- <div class="col-xs-12 col-md-8"id="navpoints">
-        <ul>
-          <li><h2 id="navpoint"><a href="code.html">CODE</a></h2></li>
-          <li><h2 id="navpoint"><a href="music.html">MUSIC</a></h2></li>
-          <li><h2 id="navpoint"><a href="art.html">ART</a></h2></li>
-          <li><h2 id="navpoint"><a href="resume.html">RESUME</a></h2></li>
-          <li><h2 id="navpoint"><a href="/contact">CONTACT</a></h2></li>
-        </ul>
-      </div> -->
-
     </div>
 
     <%= yield %>
