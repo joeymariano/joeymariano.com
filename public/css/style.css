@@ -153,3 +153,15 @@ z
 #navpoint{
   margin-bottom: -10px;
 }
+
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited {
+    border: none !important;
+    background-color: #666 !important;
+    color: black !important;
+}
+
+.btn, .btn:hover, .btn:active, .btn:visited {
+  border: none !important;
+  background-color: #666 !important;
+  color: black !important;
+}
