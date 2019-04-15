@@ -16,7 +16,6 @@
     height: 200px !important;
   }
   #navpoint{
-    font-size: .42em;
     margin-bottom: -10px;
   }
 }
@@ -35,7 +34,6 @@
     font-size: .8em;
   }
   #navpoint{
-    font-size: 1.3em;
     margin-bottom: -10px;
   }
 }
