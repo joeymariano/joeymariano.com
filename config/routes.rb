@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   get 'resume', to: 'welcome#resume'
 
+  get 'contact', to: 'welcome#contact'
+
 end
