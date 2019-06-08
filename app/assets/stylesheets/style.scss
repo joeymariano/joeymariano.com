@@ -2,8 +2,10 @@
 
 body {
   background-color: #000000;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
   color: white;
+  font-weight:500;
 }
 
 .container{
@@ -114,7 +116,6 @@ a {
 }
 
 h3 span {
-  font-weight: bold;
   color: #000000;
   background-color: #666666;
 }
@@ -190,7 +191,20 @@ h3 span {
 }
 
 #title {
-  font-size: 1.6em;
+  font-size: 1.8em;
   text-align: right;
   letter-spacing: .2em;
+}
+
+.startButton {
+    font-size: 1.6em;
+  float: left;
+}
+
+.dropright .dropdown-toggle::after {
+  vertical-align: -4px !important;
+}
+
+.blockquote h4, .blockquote a:active {
+      color: white !important;
 }
