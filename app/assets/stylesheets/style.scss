@@ -141,70 +141,26 @@ h3 span {
   border-radius: 12% 12% 0 0;
 }
 
-.btn-link:link {
-  color: grey;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.btn-link:hover {
-  color: grey;
-  font-weight: bold;
-      text-decoration: none;
-}
-
-.btn-link:enabled {
-  color: grey;
-  font-weight: bold;
-      text-decoration: none;
-}
-
-.btn-link:active {
-  color: grey;
-  font-weight: bold;
-      text-decoration: none;
-}
-
-#navpoints{
-  float:right;
-  text-align: right;
-}
-
-#navpoint{
-  margin-bottom: -10px;
-}
-
-.btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited {
-    border: none !important;
-    background-color: #666 !important;
-    color: black !important;
-}
-
-.btn, .btn:hover, .btn:active, .btn:visited {
-  border: none !important;
-  background-color: #666 !important;
-  color: black !important;
-}
-
-.dropdown {
-  float: left;
-}
+/* for Navbar */
 
 #title {
-  font-size: 1.8em;
   text-align: right;
   letter-spacing: .2em;
 }
 
-.startButton {
-    font-size: 1.6em;
-  float: left;
+.navbar {
+  padding: 0 !important;
 }
 
-.dropright .dropdown-toggle::after {
-  vertical-align: -4px !important;
+.bg-dark {
+  background-color: transparent !important;
 }
 
-.blockquote h4, .blockquote a:active {
-      color: white !important;
+.navbar-dark, .navbar-toggler {
+  border-color: #666 !important;
+  border-width: medium;
+}
+
+#navbarToggleExternalContent {
+  margin-top: 20px;
 }

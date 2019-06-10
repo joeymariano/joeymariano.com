@@ -6,8 +6,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <!-- favicon_link_tag 'favicon.ico' -->
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-
   <meta name="Description" content="Joey Michalina Mariano's art.">
   <title>joeymariano.com</title>
 
@@ -30,8 +28,8 @@
 
     <div class="row">
 
-      <div class="col-xl-2">
-          <div class="dropdown dropright">
+      <div class="col-xl-12">
+          <!-- <div class="dropdown dropright">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class='startButton'>START&nbsp;</div>
             </button>
@@ -44,11 +42,33 @@
                 <a class="dropdown-item" href="/resume.html">Resume</a>
                 <a class="dropdown-item" href="/contact.html">Contact</a>
             </div>
-          </div>
-      </div>
+          </div> -->
 
-      <div class="col-xl-10">
-        <h1 id="title">MS. JOEY MICHALINA MARIANO</h1>
+
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 id="title">MS. JOEY MICHALINA MARIANO</h1>
+            </nav>
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark">
+                  <h4 class="text-white">PORTFOLIO</h4>
+                    <ul>
+                    <li><span class="text-muted"><a href="/code.html">Code</a></span></li>
+                    <li><span class="text-muted"><a href="/music.html">Music</a></span></li>
+                    <li><span class="text-muted"><a href="/art.html">Art</a></span></li>
+                    </ul>
+                  <h4 class="text-white">INFORMATION</h4>
+                    <ul>
+                    <li><span class="text-muted"><a href="/resume.html">Resume</a></span></li>
+                    <li><span class="text-muted"><a href="/contact.html">Contact</a></span></li>
+                    </ul>
+                </div>
+              </div>
+
+          </div>
       </div>
 
       <!-- <div class="col-lg-4">
