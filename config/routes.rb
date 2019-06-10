@@ -13,4 +13,6 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'welcome#contact'
 
+  get 'about', to: 'welcome#about'
+
 end
