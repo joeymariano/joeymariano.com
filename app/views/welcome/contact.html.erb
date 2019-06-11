@@ -1,7 +1,7 @@
 <div class="row">
 
   <div class="col-sm-8">
-    <form id="contact-form" method="post" action="contact.php" role="form">
+    <%= form_tag "/email", method: 'post', id: 'contact-form', role: "form" do %>
 
     <div class="messages"></div>
 
@@ -34,7 +34,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="form_need">Topic *</label>
-                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                    <select id="form_need" name="topic" class="form-control" required="required" data-error="Please specify your need.">
                         <option value=""></option>
                         <option value="Request quotation">Code</option>
                         <option value="Request order status">Music</option>
@@ -67,7 +67,11 @@
         </div>
     </div>
 
-</form>
+    <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+    <% end %>
+
+<% end %>
   </div>
 
   <div class="col-sm-4">

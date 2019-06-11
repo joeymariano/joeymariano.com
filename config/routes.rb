@@ -4,15 +4,11 @@ Rails.application.routes.draw do
   root :to => 'welcome#index'
 
   get 'music', to: 'welcome#music'
-
   get 'art', to: 'welcome#art'
-
   get 'code', to: 'welcome#code'
-
   get 'resume', to: 'welcome#resume'
-
   get 'contact', to: 'welcome#contact'
-
   get 'about', to: 'welcome#about'
 
+  post '/email', to: 'email#create'
 end
