@@ -90,26 +90,21 @@ a {
 }
 
 /* carousel stuffs */
-
-.carousel-inner{
-  img {
-  margin: 0 auto;
-  height: 384px !important;
-  width:auto;
-  }
-}
-
+//
+// .carousel-inner{
+//   img {
+//   margin: 0 auto;
+//   height: 384px !important;
+//   width:auto;
+//   }
+// }
+//
 .carousel-control-prev, a:visited:hover:active {
   background-color: transparent !important;
 }
 
 .carousel-control-next, a:visited:hover:active {
   background-color: transparent !important;
-}
-
-h3 span {
-  color: #000000;
-  background-color: #666666;
 }
 
 .carousel-control:hover, .carousel-control:focus {
@@ -126,6 +121,12 @@ h3 span {
     filter: none;
     border-radius: 4%;
   }
+}
+
+
+h3 span {
+  color: #000000;
+  background-color: #666666;
 }
 
 .music-link a:hover img {
