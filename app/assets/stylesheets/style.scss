@@ -9,7 +9,7 @@ body {
 }
 
 .container{
-  margin-top: 10px;
+  margin-top: 1.25rem;
 }
 
 ul {
@@ -158,13 +158,14 @@ h3 span {
   margin-top: 20px;
 }
 
-//
+/* blockquote behavior */
 
 .blockquote h4{
   color: white !important;
 }
 
 /* bio pic */
+
 #bio-pic {
   border-radius: 20em;
 }
@@ -176,4 +177,20 @@ h3 span {
 
 .notice {
   color: red;
+}
+
+/* form button mod */
+
+.btn:not(:disabled):not(.disabled) {
+  background-color: #666 !important;
+  border-color: #333 !important;
+}
+
+.btn-success {
+  background-color: #fff !important;
+    border-color: #666 !important;
+}
+
+.form-group {
+  margin-bottom: 2.2rem;
 }
