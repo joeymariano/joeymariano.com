@@ -10,14 +10,14 @@
 
           <% if img == @pixel_art[0] %>
             <div class="carousel-item active">
-              <%= link_to(img, target: "_blank") do %>
-                <%= image_tag(img[7..-1], class: 'w-50 img-fluid', alt: "abstract") %>
+              <%= link_to(image_path(img), target: "_blank") do %>
+                <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
               <% end %>
             </div>
           <% else %>
             <div class="carousel-item">
-              <%= link_to(img, target: "_blank") do %>
-                <%= image_tag(img[7..-1], class: 'w-50 img-fluid', alt: "abstract") %>
+              <%= link_to(image_path(img), target: "_blank") do %>
+                <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
               <% end %>
             </div>
           <% end %>
@@ -51,14 +51,14 @@
 
             <% if img == @physical_art[0] %>
               <div class="carousel-item active">
-                <%= link_to(img, target: "_blank") do %>
-                  <%= image_tag(img[7..-1], class: 'w-50 img-fluid', alt: "abstract") %>
+                <%= link_to(image_path(img), target: "_blank") do %>
+                  <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
                 <% end %>
               </div>
             <% else %>
               <div class="carousel-item">
-                <%= link_to(img, target: "_blank") do %>
-                  <%= image_tag(img[7..-1], class: 'w-50 img-fluid', alt: "abstract") %>
+                <%= link_to(image_path(img), target: "_blank") do %>
+                  <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
                 <% end %>
               </div>
             <% end %>
@@ -86,41 +86,25 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <%= link_to("assets/ready_run/1.jpg", target: "_blank") do %>
-              <%= image_tag("ready_run/1.jpg", class: 'w-50 img-fluid', alt: "teletime carts") %>
-            <% end %>
-          </div>
 
-          <div class="carousel-item">
-            <%= link_to("assets/ready_run/2.jpg", target: "_blank") do %>
-              <%= image_tag("ready_run/2.jpg", class: 'w-50 img-fluid', alt: "half gb") %>
-            <% end %>
-          </div>
+          <% @ready_run.each do |img| %><!-- Iterate over @ready_run -->
 
-          <div class="carousel-item">
-            <%= link_to("assets/ready_run/3.jpg", target: "_blank") do %>
-              <%= image_tag("ready_run/3.jpg", class: 'w-50 img-fluid', alt: "teletime on the screen") %>
+            <% if img == @ready_run[0] %>
+              <div class="carousel-item active">
+                <%= link_to(image_path(img), target: "_blank") do %>
+                  <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
+                <% end %>
+              </div>
+            <% else %>
+              <div class="carousel-item">
+                <%= link_to(image_path(img), target: "_blank") do %>
+                  <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
+                <% end %>
+              </div>
             <% end %>
-          </div>
 
-          <div class="carousel-item">
-            <%= link_to("assets/ready_run/4.jpg", target: "_blank") do %>
-              <%= image_tag("ready_run/4.jpg", class: 'w-50 img-fluid', alt: "juveline amplifier") %>
-            <% end %>
-          </div>
+          <% end %>
 
-          <div class="carousel-item">
-            <%= link_to("assets/ready_run/5.jpg", target: "_blank") do %>
-              <%= image_tag("ready_run/5.jpg", class: 'w-50 img-fluid', alt: "ready run opening") %>
-            <% end %>
-          </div>
-
-          <div class="carousel-item">
-            <%= link_to("assets/ready_run/6.jpg", target: "_blank") do %>
-              <%= image_tag("ready_run/6.jpg", class: 'w-50 img-fluid', alt: "people interacting with teletime") %>
-            <% end %>
-          </div>
         </div>
 
         <!-- Left and right controls -->
@@ -142,65 +126,25 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <%= link_to("assets/digital_art/alien.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/alien.jpg", class: 'w-50 img-fluid', alt: "alien") %>
-            <% end %>
-          </div>
 
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/break-abstract.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/break-abstract.jpg", class: 'w-50 img-fluid', alt: "break abstract") %>
-            <% end %>
-          </div>
+          <% @digital_art.each do |img| %><!-- Iterate over @digital_art -->
 
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/cash-outdoors.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/cash-outdoors.jpg", class: 'w-50 img-fluid', alt: "cash outdoors") %>
+            <% if img == @digital_art[0] %>
+              <div class="carousel-item active">
+                <%= link_to(image_path(img), target: "_blank") do %>
+                  <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
+                <% end %>
+              </div>
+            <% else %>
+              <div class="carousel-item">
+                <%= link_to(image_path(img), target: "_blank") do %>
+                  <%= image_tag(img, class: 'w-50 img-fluid', alt: "abstract") %>
+                <% end %>
+              </div>
             <% end %>
-          </div>
 
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/hand.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/hand.jpg", class: 'w-50 img-fluid', alt: "hand") %>
-            <% end %>
-          </div>
+          <% end %>
 
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/hand2.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/hand2.jpg", class: 'w-50 img-fluid', alt: "hand 2") %>
-            <% end %>
-          </div>
-
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/hash-eyes.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/hash-eyes.jpg", class: 'w-50 img-fluid', alt: "hash eyes") %>
-            <% end %>
-          </div>
-
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/outdoors.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/outdoors.jpg", class: 'w-50 img-fluid', alt: "outdoors") %>
-            <% end %>
-          </div>
-
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/smear-face.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/smear-face.jpg", class: 'w-50 img-fluid', alt: "smear face") %>
-            <% end %>
-          </div>
-
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/texture-guy.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/texture-guy.jpg", class: 'w-50 img-fluid', alt: "texture guy") %>
-            <% end %>
-          </div>
-
-          <div class="carousel-item">
-            <%= link_to("assets/digital_art/triangles.jpg", target: "_blank") do %>
-              <%= image_tag("digital_art/triangles.jpg", class: 'w-50 img-fluid', alt: "triangles") %>
-            <% end %>
-          </div>
         </div>
 
         <!-- Left and right controls -->

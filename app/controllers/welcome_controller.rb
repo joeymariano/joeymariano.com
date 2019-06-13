@@ -14,19 +14,19 @@ class WelcomeController < ApplicationController
 
     Dir.foreach('app/assets/images/pixel_art') do |item|
       next if item == '.' or item == '..'
-      @pixel_art << "assets/pixel_art/" + item
+      @pixel_art << "pixel_art/" + item
     end
     Dir.foreach('app/assets/images/digital_art') do |item|
       next if item == '.' or item == '..'
-      @digital_art << "assets/digital_art/" + item
+      @digital_art << "digital_art/" + item
     end
     Dir.foreach('app/assets/images/physical_art/') do |item|
       next if item == '.' or item == '..'
-      @physical_art << "assets/physical_art/" + item
+      @physical_art << "physical_art/" + item
     end
     Dir.foreach('app/assets/images/ready_run') do |item|
       next if item == '.' or item == '..'
-      @ready_run << "assets/ready_run/" + item
+      @ready_run << "ready_run/" + item
     end
   end
 
