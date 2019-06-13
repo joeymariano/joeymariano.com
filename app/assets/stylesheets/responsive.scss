@@ -9,12 +9,18 @@
   .footer {
     font-size: .85em;
   }
+  .footer {
+    font-size: .6em
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
   #title {
     font-size: .8em !important;
+  }
+  .footer {
+    font-size: .7em
   }
 }
 
