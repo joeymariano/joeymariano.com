@@ -90,15 +90,7 @@ a {
 }
 
 /* carousel stuffs */
-//
-// .carousel-inner{
-//   img {
-//   margin: 0 auto;
-//   height: 384px !important;
-//   width:auto;
-//   }
-// }
-//
+
 .carousel-control-prev, a:visited:hover:active {
   background-color: transparent !important;
 }
@@ -121,6 +113,10 @@ a {
     filter: none;
     border-radius: 4%;
   }
+}
+
+.carousel-item {
+  text-align: center;
 }
 
 
