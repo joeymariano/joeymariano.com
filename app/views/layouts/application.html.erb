@@ -64,6 +64,22 @@
 
     <%= yield %>
 
+    <br>
+      <div class="row footer">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-left">
+          <p>
+          Ⓒ joey michalina mariano 2019
+          </p>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-right">
+          <p>
+          portfolio: <%= link_to "code", code_path %> <%= link_to "art", art_path %> <%= link_to "music", music_path %><br>
+          information: <%= link_to "about", about_path %> <%= link_to "resume", resume_path %> <%= link_to "contact", contact_path %> <%= link_to "home", "/" %>
+          </p>
+        </div>
+      </div>
+
+
 </div>
 <!-- end container -->
 

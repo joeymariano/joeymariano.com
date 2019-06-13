@@ -191,3 +191,17 @@ h3 span {
 .form-group {
   margin-bottom: 2.2rem;
 }
+
+
+.footer {
+  font-size: 1em;
+  letter-spacing: .2em;
+  color: #666;
+
+  .footer-right {
+    text-align: right;
+  }
+  .footer-left {
+    text-align: left;
+  }
+}
