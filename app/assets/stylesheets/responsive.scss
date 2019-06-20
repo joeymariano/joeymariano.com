@@ -18,6 +18,11 @@
   #takeACard {
     text-align: left;
   }
+  .carousel-item {
+    img {
+      width: 85vw !important;
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -28,12 +33,22 @@
   .footer {
     font-size: .7em
   }
+  .carousel-item {
+    img {
+      width: 75vw !important;
+    }
+  }
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   #title {
     font-size: 1.4em;
+  }
+  .carousel-item {
+    img {
+      width: 60vw !important;
+    }
   }
 }
 

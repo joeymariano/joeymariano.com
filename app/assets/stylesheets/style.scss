@@ -109,14 +109,13 @@ a {
 }
 
 .carousel-inner {
+  text-align: center;
 
 }
 
 .carousel-item {
-  text-align: center;
   img {
-      height: 384px;
-      width: auto;
+    width: 30vw;
   }
   a:hover img {
     filter: none;
@@ -218,8 +217,4 @@ h3 span {
 
 .last-blockquote {
   margin-bottom: .8em !important;
-}
-
-#takeACard {
-  text-align: center;
 }
