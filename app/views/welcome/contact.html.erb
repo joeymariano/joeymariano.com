@@ -1,77 +1,85 @@
 <div class="row">
 
-  <div class="col-sm-8">
-    <%= form_tag "/email", method: 'post', id: 'contact-form', role: "form" do %>
+    <div class="col-sm-8">
+        <%= form_tag "/email", method: 'post', id: 'contact-form', role: "form" do %>
+            <div class="controls">
 
-    <div class="messages"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">First Name</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="first name" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="last name" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="controls">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="email@email.com" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_need">Subject</label>
+                            <select id="form_need" name="topic" class="form-control" required="required" data-error="topic" placeholder="Topic">
+                                <option value="Code">code</option>
+                                <option value="Music">music</option>
+                                <option value="Art and Design">art and design</option>
+                                <option value="Other">other</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">First Name</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="first name" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <!-- HCAPTCHA SCRIPT -->
+                        <div class="h-captcha" data-sitekey="<%= ENV['HCAPTCHA_SITEKEY'] %>"></div>
+                        <script src="https://hcaptcha.com/1/api.js" async defer></script>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send btn-dark" value="Send message">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <% if flash[:notice] %>
+                        <div class="notice">
+                            <%= flash[:notice] %>
+                        </div>
+                        <% end %>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_lastname">Last Name</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="last name" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="email@email.com" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_need">Subject</label>
-                    <select id="form_need" name="topic" class="form-control" required="required" data-error="topic" placeholder="Topic">
-                        <option value="Code">code</option>
-                        <option value="Music">music</option>
-                        <option value="Art and Design">art and design</option>
-                        <option value="Other">other</option>
-                    </select>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send btn-dark" value="Send message">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                    <br>
-                      <% if flash[:notice] %>
-                        <div class="notice"><%= flash[:notice] %></div>
-                      <% end %>
-            </div>
-        </div>
+        <% end %>
     </div>
 
-<% end %>
-  </div>
-
-  <div class="col-sm-4">
-    <p id="takeACard">Take a business card:</p>
-    <%= image_tag("business-card.png", alt: "ms. joey michalina mariano's business card", class: 'img-fluid', id: 'biz-card') %><br></br>
-  </div>
-
+    <div class="col-sm-4">
+        <p id="takeACard">Take a business card:</p>
+        <%= image_tag("business-card.png", alt: "ms. joey michalina mariano's business card", class: 'img-fluid', id: 'biz-card') %><br></br>
+    </div>
 </div>
