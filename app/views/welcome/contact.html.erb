@@ -52,11 +52,10 @@
                         </div>
                     </div>
 
-
                     <div class="col-md-12">
                         <!-- HCAPTCHA SCRIPT -->
-                        <div class="h-captcha" data-sitekey="<%= ENV['HCAPTCHA_SITEKEY'] %>"></div>
-                        <script src="https://hcaptcha.com/1/api.js" async defer></script>
+                        <div class="g-recaptcha" data-sitekey="<%= ENV['GGL_SITEKEY'] %>"></div>
+                        <br>
                     </div>
 
                     <div class="col-md-12">
@@ -68,9 +67,9 @@
                     <div class="col-md-12">
                         <br>
                         <% if flash[:notice] %>
-                        <div class="notice">
-                            <%= flash[:notice] %>
-                        </div>
+                            <div class="notice">
+                                <%= flash[:notice] %>
+                            </div>
                         <% end %>
                     </div>
                 </div>
