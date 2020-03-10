@@ -1,4 +1,6 @@
 class EmailController < ApplicationController
+  include Recaptcha::Adapters::ControllerMethods
+  
   def create
 
     # verify captcha with http request
