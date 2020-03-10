@@ -42,7 +42,6 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'dotenv-rails'
 gem 'mail_form'
-gem 'httparty'
 gem 'recaptcha' # load add after dot-env please. thank you.
 
 group :development, :test do
