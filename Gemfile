@@ -43,6 +43,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'dotenv-rails'
 gem 'mail_form'
 gem 'httparty'
+gem 'recaptcha' # add after dot-env
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -35,4 +35,7 @@ class WelcomeController < ApplicationController
 
   def code
   end
+
+  def contact
+  end
 end
